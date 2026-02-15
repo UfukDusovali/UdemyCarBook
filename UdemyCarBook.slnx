@@ -1,0 +1,11 @@
+<Solution>
+  <Folder Name="/Core/">
+    <Project Path="UdemyCarBook.Domain/UdemyCarBook.Domain.csproj" />
+  </Folder>
+  <Folder Name="/Infrastructure/">
+    <Project Path="Infrastructure/UdemyCarBook.Persistence/UdemyCarBook.Persistence.csproj" />
+  </Folder>
+  <Folder Name="/Presentation/">
+    <Project Path="Presentation/UdemyCarBook.WebApi/UdemyCarBook.WebApi.csproj" Id="42f0cf34-18f4-4335-a1fd-e1ffeaf483f3" />
+  </Folder>
+</Solution>
