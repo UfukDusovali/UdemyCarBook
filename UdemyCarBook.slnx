@@ -1,5 +1,6 @@
 <Solution>
   <Folder Name="/Core/">
+    <Project Path="Core/UdemyCarBook.Application/UdemyCarBook.Application.csproj" Id="bf5be6b9-7f4c-4551-92d2-c033ccd117d4" />
     <Project Path="UdemyCarBook.Domain/UdemyCarBook.Domain.csproj" />
   </Folder>
   <Folder Name="/Infrastructure/">
