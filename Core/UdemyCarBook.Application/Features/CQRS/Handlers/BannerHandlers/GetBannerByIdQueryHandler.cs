@@ -1,8 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
-using UdemyCarBook.Application.Features.CQRS.Queries.AboutQueries;
-using UdemyCarBook.Application.Features.CQRS.Results.AboutResults;
+using UdemyCarBook.Application.Features.CQRS.Queries.BannerQueries;
 using UdemyCarBook.Application.Features.CQRS.Results.BannerResults;
 using UdemyCarBook.Application.Interfaces;
 using UdemyCarBook.Domain.Entities;
@@ -18,7 +17,7 @@ namespace UdemyCarBook.Application.Features.CQRS.Handlers.BannerHandlers
             _repository = repository;
         }
 
-        public async Task<GetBannerByIdQueryResult> Handle(GetAboutByIdQuery query)
+        public async Task<GetBannerByIdQueryResult> Handle(GetBannerByIdQuery query)
         {
             var values = await _repository.GetByIdAsync(query.Id);
             return new GetBannerByIdQueryResult

@@ -19,7 +19,7 @@ namespace UdemyCarBook.Application.Features.CQRS.Handlers.BannerHandlers
         public async Task Handle(RemoveBannerCommand command)
         {
             var values = await _repository.GetByIdAsync(command.Id);
-            await _repository.UpdateAsync(values);
+            await _repository.RemoveAsync(values);
         }
     }
 }

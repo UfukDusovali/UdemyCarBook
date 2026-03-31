@@ -33,7 +33,7 @@ namespace UdemyCarBook.WebApi.Controllers
 
 
         [HttpGet]
-        public async Task<IActionResult> AboutList()
+        public async Task<IActionResult> GetAboutList()
         {
             var values = await _getAboutQueryHandler.Handle();
             return Ok(values);
