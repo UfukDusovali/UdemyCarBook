@@ -1,1 +1,5 @@
-<Solution />
+<Solution>
+  <Folder Name="/Core/" />
+  <Folder Name="/Infrastructure/" />
+  <Folder Name="/Presentation/" />
+</Solution>
