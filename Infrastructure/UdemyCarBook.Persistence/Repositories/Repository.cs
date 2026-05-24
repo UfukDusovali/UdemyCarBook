@@ -7,11 +7,11 @@ using UdemyCarBook.Persistence.Context;
 
 namespace UdemyCarBook.Persistence.Repositories
 {
-    public class Repositry<T> : IRepository<T> where T : class
+    public class Repository<T> : IRepository<T> where T : class
     {
         private readonly CarBookContext _context;
 
-        public Repositry(CarBookContext context)
+        public Repository(CarBookContext context)
         {
             _context = context;
         }
