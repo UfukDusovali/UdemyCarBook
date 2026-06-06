@@ -9,7 +9,7 @@ namespace UdemyCarBook.WebApi.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    public class BannerController : ControllerBase
+    public class BannersController : ControllerBase
     {
         private readonly GetBannerQueryHandler _getBannerQueryHandler;
         private readonly GetBannerByIdQueryHandler _getBannerByIdQueryHandler;
@@ -17,7 +17,7 @@ namespace UdemyCarBook.WebApi.Controllers
         private readonly UpdateBannerCommandHandler _updateBannerCommandHandler;
         private readonly RemoveBannerCommandHandler _removeBannerCommandHandler;
 
-        public BannerController(
+        public BannersController(
             GetBannerQueryHandler getBannerQueryHandler,
             GetBannerByIdQueryHandler getBannerByIdQueryHandler,
             CreateBannerCommandHandler createBannerCommandHandler,

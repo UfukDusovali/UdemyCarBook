@@ -9,7 +9,7 @@ namespace UdemyCarBook.WebApi.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    public class BrandController : ControllerBase
+    public class BrandsController : ControllerBase
     {
         private readonly CreateBrandCommandHandler _createBrandCommandHandler;
         private readonly UpdateBrandCommandHandler _updateBrandCommandHandler;
@@ -17,7 +17,7 @@ namespace UdemyCarBook.WebApi.Controllers
         private readonly GetBrandQueryHandler _getBrandQueryHandler;
         private readonly GetBrandByIdQueryHandler _getBrandByIdQueryHandler;
 
-        public BrandController(
+        public BrandsController(
             CreateBrandCommandHandler createBrandCommandHandler,
             UpdateBrandCommandHandler updateBrandCommandHandler,
             RemoveBrandCommandHandler removeBrandCommandHandler,
