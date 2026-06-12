@@ -1,14 +1,14 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
-using UdemyCarBook.Domain.Entities;
 
-namespace UdemyCarBook.Application.Features.CQRS.Commands.CarCommands
+namespace UdemyCarBook.Application.Features.CQRS.Results.CarResult
 {
-    public class UpdateCarCommand
+    public class GetCarWithBrandQueryResult
     {
         public int CarID { get; set; }
         public int BrandID { get; set; }
+        public string BrandName { get; set; }
         public string Model { get; set; }
         public string CoverImageUrl { get; set; }
         public int Km { get; set; }

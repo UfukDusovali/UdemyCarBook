@@ -4,14 +4,17 @@ using UdemyCarBook.Application.Features.CQRS.Handlers.BannerHandlers;
 using UdemyCarBook.Application.Features.CQRS.Handlers.BrandHandlers;
 using UdemyCarBook.Application.Features.CQRS.Handlers.CarHandlers;
 using UdemyCarBook.Application.Interfaces;
+using UdemyCarBook.Application.Interfaces.CarInterfaces;
 using UdemyCarBook.Persistence.Context;
 using UdemyCarBook.Persistence.Repositories;
+using UdemyCarBook.Persistence.Repositories.CarRepositories;
 
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddScoped<CarBookContext>();
 builder.Services.AddScoped(typeof(IRepository<>), typeof(Repository<>));
+builder.Services.AddScoped(typeof(ICarRepository), typeof(CarRepository));
 
 
 builder.Services.AddScoped<GetAboutByIdQueryHandler>();
@@ -37,6 +40,8 @@ builder.Services.AddScoped<GetCarQueryHandler>();
 builder.Services.AddScoped<CreateCarCommandHandler>();
 builder.Services.AddScoped<UpdateCarCommandHandler>();
 builder.Services.AddScoped<RemoveCarCommandHandler>();
+builder.Services.AddScoped<GetLast5CarsWithBrandQueryHandler>();
+builder.Services.AddScoped<GetCarWithBrandQueryHandler>();
 
 builder.Services.AddControllers();
 // Learn more about configuring OpenAPI at https://aka.ms/aspnet/openapi
