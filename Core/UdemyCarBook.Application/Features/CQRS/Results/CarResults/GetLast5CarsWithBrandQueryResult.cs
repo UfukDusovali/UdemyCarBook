@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace UdemyCarBook.Application.Features.CQRS.Results.CarResult
+namespace UdemyCarBook.Application.Features.CQRS.Results.CarResults
 {
     public class GetLast5CarsWithBrandQueryResult
     {

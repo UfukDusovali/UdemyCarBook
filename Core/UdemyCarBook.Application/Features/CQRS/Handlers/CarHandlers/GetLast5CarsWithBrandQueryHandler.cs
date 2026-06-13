@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
-using UdemyCarBook.Application.Features.CQRS.Results.CarResult;
+using UdemyCarBook.Application.Features.CQRS.Results.CarResults;
 using UdemyCarBook.Application.Interfaces.CarInterfaces;
 
 namespace UdemyCarBook.Application.Features.CQRS.Handlers.CarHandlers

@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Text;
 using UdemyCarBook.Domain.Entities;
 
-namespace UdemyCarBook.Application.Features.CQRS.Results.CarResult
+namespace UdemyCarBook.Application.Features.CQRS.Results.CarResults
 {
     public class GetCarQueryResult
     {
