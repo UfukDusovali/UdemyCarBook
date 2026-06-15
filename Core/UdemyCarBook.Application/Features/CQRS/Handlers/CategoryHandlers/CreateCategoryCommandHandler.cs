@@ -18,7 +18,7 @@ namespace UdemyCarBook.Application.Features.CQRS.Handlers.CategoryHandlers
 
         public async Task Handle(CreateCategoryCommand command)
         {
-            var values = _repository.CreateAsync(new Category
+            await _repository.CreateAsync(new Category
             {
                 Name = command.Name
             });

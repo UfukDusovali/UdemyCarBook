@@ -9,16 +9,16 @@ namespace UdemyCarBook.Application.Features.CQRS.Handlers.BannerHandlers
 {
     public class CreateBannerCommandHandler
     {
-        private readonly IRepository<Banner> _Repository;
+        private readonly IRepository<Banner> _repository;
 
         public CreateBannerCommandHandler(IRepository<Banner> repository)
         {
-            _Repository = repository;
+            _repository = repository;
         }
 
         public async Task Handle( CreateBannerCommand command)
         {
-            var values = _Repository.CreateAsync(new Banner
+            await _repository.CreateAsync(new Banner
             {
                 Description = command.Description,
                 Title = command.Title,

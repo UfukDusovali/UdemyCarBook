@@ -9,16 +9,16 @@ namespace UdemyCarBook.Application.Features.CQRS.Handlers.AboutHandlers
 {
     public class CreateAboutCommandHandler
     {
-        private readonly IRepository<About> _Repository;
+        private readonly IRepository<About> _repository;
 
         public CreateAboutCommandHandler(IRepository<About> repository)
         {
-            _Repository = repository;
+            _repository = repository;
         }
 
         public async Task Handle( CreateAboutCommand command)
         {
-            await _Repository.CreateAsync(new About
+            await _repository.CreateAsync(new About
             {
                 Title= command.Title,
                 Description= command.Description,
