@@ -20,13 +20,13 @@ namespace UdemyCarBook.Persistence.Repositories.CarRepositories
 
         public async Task<List<Car>> GetCarsListWithBrands()
         {
-            var values= await _context.Car.Include(x=> x.Brand).ToListAsync();
+            var values= await _context.Cars.Include(x=> x.Brand).ToListAsync();
             return values;
         }
 
         public List<Car> GetLast5CarsWithBrands()
         {
-            var values = _context.Car.Include(x => x.Brand).OrderByDescending(x => x.CarID).Take(5).ToList();
+            var values = _context.Cars.Include(x => x.Brand).OrderByDescending(x => x.CarID).Take(5).ToList();
             return values;
         }
     }

@@ -10,33 +10,31 @@ namespace UdemyCarBook.Persistence.Context
             optionsBuilder.UseSqlServer("Server=.;Database=UdemyCarBookDb;Trusted_Connection=True;TrustServerCertificate=True;");
         }
 
+        public DbSet<AppUser> AppUsers { get; set; }
+        public DbSet<AppRole> AppRoles { get; set; }
         public DbSet<About> Abouts { get; set; }
-        public DbSet<AppRole> AppRole { get; set; }
-        public DbSet<AppUser> AppUser { get; set; }
-        public DbSet<Author> Author { get; set; }
-        public DbSet<Banner> Banner { get; set; }
-        public DbSet<Blog> Blog { get; set; }
-        public DbSet<Brand> Brand { get; set; }
-        public DbSet<Car> Car { get; set; }
-        public DbSet<CarDescription> CarDescription { get; set; }
-        public DbSet<CarFeature> CarFeature { get; set; }
-        public DbSet<CarPricing> CarPricing { get; set; }
-        public DbSet<Category> Category { get; set; }
-        public DbSet<Comment> Comment { get; set; }
-        public DbSet<Contact> Contact { get; set; }
-        public DbSet<Customer> Customer { get; set; }
-        public DbSet<Feature> Feature { get; set; }
-        public DbSet<FooterAddress> FooterAddress { get; set; }
-        public DbSet<Location> Location { get; set; }
-        public DbSet<Pricing> Pricing { get; set; }
-        public DbSet<RentACar> RentACar { get; set; }
-        public DbSet<RentACarProcess> RentACarProcess { get; set; }
-        public DbSet<Reservation> Reservation { get; set; }
-        public DbSet<Review> Review { get; set; }
-        public DbSet<Service> Service { get; set; }
-        public DbSet<SocialMedia> SocialMedia { get; set; }
-        public DbSet<TagCloud> TagCloud { get; set; }
-        public DbSet<Testimonial> Testimonial { get; set; }
+        public DbSet<Banner> Banners { get; set; }
+        public DbSet<Brand> Brands { get; set; }
+        public DbSet<Car> Cars { get; set; }
+        public DbSet<CarDescription> CarDescriptions { get; set; }
+        public DbSet<CarFeature> CarFeatures { get; set; }
+        public DbSet<CarPricing> CarPricings { get; set; }
+        public DbSet<Category> Categories { get; set; }
+        public DbSet<Contact> Contacts { get; set; }
+        public DbSet<Feature> Features { get; set; }
+        public DbSet<FooterAddress> FooterAddresses { get; set; }
+        public DbSet<Location> Locations { get; set; }
+        public DbSet<Pricing> Pricings { get; set; }
+        public DbSet<Service> Services { get; set; }
+        public DbSet<SocialMedia> SocialMedias { get; set; }
+        public DbSet<Testimonial> Testimonials { get; set; }
+        public DbSet<Author> Authors { get; set; }
+        public DbSet<Blog> Blogs { get; set; }
+        public DbSet<TagCloud> TagClouds { get; set; }
+        public DbSet<Comment> Comments { get; set; }
+        public DbSet<RentACar> RentACars { get; set; }
+        public DbSet<Reservation> Reservations { get; set; }
+        public DbSet<Review> Reviews { get; set; }
 
     }
 }

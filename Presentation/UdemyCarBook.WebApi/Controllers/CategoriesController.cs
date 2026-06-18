@@ -53,7 +53,7 @@ namespace UdemyCarBook.WebApi.Controllers
         }
 
         [HttpPut]
-        public async Task<IActionResult> UpdateCategory(UpdateCategoryCommand command)
+        public async Task<IActionResult> UpdateCategory(UpdateCategoryCommand command) 
         {
             await _updateCategoryCommandHandler.Handle(command);
             return Ok("Kategori güncellendi");
